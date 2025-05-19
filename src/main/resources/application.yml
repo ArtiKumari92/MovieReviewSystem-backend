@@ -8,4 +8,4 @@ spring:
 
 #JWT configuration
 jwt:
-  secret: review$movie@561
+  secret: your-very-secret-key-that-is-long-enough!
