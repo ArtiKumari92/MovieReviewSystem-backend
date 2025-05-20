@@ -10,15 +10,18 @@ import java.time.LocalDateTime;
 
 @Document(collection = "reviews")
 @Data
-@AllArgsConstructor @NoArgsConstructor
+@AllArgsConstructor
+@NoArgsConstructor
 public class Review {
     private ObjectId id;
     private String body;
+    private String email;
     private LocalDateTime created;
     private LocalDateTime updated;
 
-    public Review(String body, LocalDateTime created, LocalDateTime updated) {
+    public Review(String body, String email, LocalDateTime created, LocalDateTime updated) {
         this.body = body;
+        this.email = email;
         this.created = created;
         this.updated = updated;
     }
